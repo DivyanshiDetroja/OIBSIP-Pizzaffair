@@ -1,0 +1,84 @@
+div.card{
+    height: 250px;
+    width: 400px;
+    overflow: hidden;
+    display:flex;
+    border-radius: 20px;
+    box-shadow: 2px 3px 5px #aaaaaa;
+    margin: 10px 5px;
+}
+
+div.left{
+    height:250px;
+    width: 300px;
+    background-image: url("../images/pizza-images/img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+div.right{
+    height: 250px;
+    width:100%;
+    padding: 5px 15px;
+    background-color: #FFE6C7;
+    opacity: 0.8;
+}
+
+h1.pizza-name{
+    color: #9D5C0D;
+    font-family: 'Barriecito', cursive;
+    font-size: xxx-large;
+    font-weight: 800;
+    opacity: 1;
+}
+
+p.p-card{
+    font-family: 'Caveat', cursive;
+    font-weight: 800;
+    font-size: larger;
+    color: #E5890A;
+    opacity: 1;
+    margin: 5px 0;
+}
+
+h2.card-price{
+    font-family: 'K2D', sans-serif;
+    font-size: larger;
+    color: #54B435;
+    margin: 10px 0;
+}
+
+h2.card-price:hover{
+    cursor: pointer;
+    font-size: x-large;
+    color: #379237;
+    margin-top: -0.5px;
+    transition: 0.3s;
+}
+
+button.card-customize-button{
+    font-family: 'Barriecito', cursive;
+    font-weight: 500;
+    font-size: large;
+    background: none;
+    color: #E5890A;
+    border: #CC9B6D 0.2px solid;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+button.card-customize-button:hover{
+    background-color: #E5890A;
+    color: #FFE6C7;
+    margin-top: -3px;
+    transition: 0.3s;
+    height: 33px;
+    width: 115px;
+}
+
+div.card-group{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

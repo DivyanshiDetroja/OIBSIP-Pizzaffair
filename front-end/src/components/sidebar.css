@@ -1,0 +1,236 @@
+/* utls css */
+div.sidebar-container{
+    height: 100vh;
+    width: 25vw;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+
+    /* background-color: #FAFAFA; */
+  /* opacity: 0.7; */
+  /* background-color: #FAFAFA; */
+/* opacity: 0.4; */
+/* background-color: #FAFAFA; */
+opacity: 1;
+/* background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #FAFAFA 40px ), repeating-linear-gradient( #F7D08A55, #F7D08A ); */
+  
+background: 
+      radial-gradient(calc(1.28*40px + 15px/2) at left 50% bottom calc(-.8*40px),#fafafa calc(100% - 15px),#ffe6c7 calc(101% - 15px) 100%,#0000 101%) calc(2*40px) calc(-1*calc(1.5*40px + 15px)),
+      radial-gradient(calc(1.28*40px + 15px/2) at left 50% bottom calc(-.8*40px),#c7c7c7 calc(100% - 15px),#ffe6c7 calc(101% - 15px) 100%,#0000 101%) calc(-1*40px) calc(calc(1.5*40px + 15px)/-2),
+      radial-gradient(calc(1.28*40px + 15px/2) at left 50% top    calc(-.8*40px),#c7c7c7 calc(100% - 15px),#ffe6c7 calc(101% - 15px) 100%,#0000 101%) 0 calc(1.5*40px + 15px),
+      radial-gradient(calc(1.28*40px + 15px/2) at left 50% top    calc(-.8*40px),#fafafa calc(100% - 15px),#ffe6c7 calc(101% - 15px) 100%,#0000 101%) 40px calc(calc(1.5*40px + 15px)/ 2),
+      linear-gradient(#fafafa 50%,#c7c7c7 0);
+background-size: calc(4*40px) calc(1.5*40px + 15px);
+
+
+
+
+  }
+  
+  
+  div.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    width: 25vw;
+    /* background-color: blue; */
+    /* background-color: #FAFAFA; */
+    /* opacity: 0.85; */
+    background: none;
+
+  }
+  
+  div.order{
+    height: 60vh;
+    width: 25vw;
+  background: none;
+
+  
+  position: relative;
+  overflow: scroll;
+
+  background-image: url("../images/chef-holding-wine.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  }
+
+div.order::-webkit-scrollbar {
+    display: none;
+  }
+
+  div.order{
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+  
+  /* styles css */
+  div.sidebar-container{
+    box-shadow: 2px 0 2px rgba(104, 103, 103, 0.6); 
+    opacity: 0.8;
+}
+
+  /* menu */
+div.menu{
+    /* background-color: #FAFAFA; */
+}
+
+div.options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a.a-menu{  margin: 7px 0;
+    text-decoration: none;
+    color: #CC9B6D;
+    font-family: 'Barriecito', cursive;
+    font-weight: 800;
+
+    font-size: x-large;
+    font-stretch: expanded;
+    text-transform: uppercase;
+    width: fit-content;
+    
+
+}
+
+a.a-menu:hover, a.a-menu:active{
+    font-size: xxx-large;
+    color: #E5890A;
+}
+
+a.a-menu:active{
+  text-decoration: underline;
+}
+
+h1{
+    margin: 0;
+    /* margin-left: 75px; */
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+    color: #9D5C0D;
+    display: inline;
+}
+
+div.order-item-container{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.order-item{
+  height: 9vh;
+  width: 22vw;
+  background-color: rgba(250, 250, 250, 0.7);
+  border-radius: 20px;
+  margin: 10px 0;
+}
+
+div.order-total{
+  height: 10vh;
+  width: 25vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  position:sticky;
+  bottom:0;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+div.order-item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+div.button-group{
+  display: flex;
+  height: 30px;
+  width: 90px;
+  margin: 10px;
+}
+
+button.order-pizza-button{
+  background-color: #54B435;
+  color:white;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #379237;
+  margin: 0;
+  font-family: 'Barriecito', cursive;
+    font-weight: 600;
+font-size: large;
+    
+display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+button.order-pizza-button:hover{
+  background-color: #379237;
+  
+}
+
+  /* button.zero{
+    pointer-events: none;
+   cursor: default;
+  } */
+
+.left-border-radius-button{
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  }
+
+.right-border-radius-button{
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  }
+
+  h3.order-pizza-price{
+    font-family: 'K2D', sans-serif;
+    font-size: larger;
+    color: #379237;
+    margin: 10px 10px;
+  }
+
+  h3.order-pizza-name{
+    font-family: 'Kalam', cursive;
+  font-weight: 600;
+  color: #9D5C0D;
+  margin: 10px;
+  }
+
+  button.checkout-button{
+    font-family: 'Barriecito', cursive;
+    font-weight: 500;
+    font-size: larger;
+    font-stretch: expanded;
+    background: none;
+    color: #FFE6C7;
+    border: #CC9B6D 0.2px solid;
+    height: 55px;
+    width: 200px;
+    border-radius: 20px;
+  }
+  
+  button.checkout-button:hover{
+    background-color: #E5890A;
+    color: #FFE6C7;
+    margin-top: -5px;
+    transition: 0.3s;
+  }
+
+  h2.checkout-total{
+    font-family: 'K2D', sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    color: #E5890A;
+    margin: 10px 10px;
+  }
