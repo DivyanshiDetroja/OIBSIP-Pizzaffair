@@ -1,0 +1,182 @@
+/* div.pizza-custom-container{
+    height: 76.5vh;
+    width: 75vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+} */
+
+div.custom-card{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+div.left-custom{
+    height: 70vh;
+    width: 20vw;
+    background-color: #F8C545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+div.middle-custom{
+    height: 70vh;
+    width: 30vw;
+    background-color: #EEEBD3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div.right-custom{
+    height: 70vh;
+    width: 20vw;
+    background-color: #F8C545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+div.details-custom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 20px 0;
+}
+
+/* heading font style */
+h2.custom-base-heading, h2.custom-sauce-heading, h2.custom-cheese-heading,h2.custom-veggies-heading{
+    font-family: 'Barriecito', cursive;
+    font-weight: 800;
+    font-size: larger;
+    color: #437C90;
+    opacity: 0.7;
+}
+
+h2.heading-left-custom{
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    font-weight: 900;
+    font-size: x-large;
+    font-stretch: expanded;
+    color: #9D5C0D;
+    margin: 5px 0;
+    padding-bottom: 20px;
+    
+}
+
+h2.heading-middle-custom{
+    text-align: center;
+    font-family: 'Barriecito', cursive;
+    font-weight: 800;
+    font-size: xxx-large;
+    font-stretch: expanded;
+    text-transform: uppercase;
+    color:#E5890A;
+    margin: 0;
+    padding-bottom: 25px;
+
+}
+
+h2.heading-right-custom{
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    font-weight: 900;
+    font-size: x-large;
+    font-stretch: expanded;
+    color: #9D5C0D;
+    margin: 5px 0;
+}
+
+/* img */
+img.pizza-round-round{
+    rotate: 90deg;
+    animation: rotate-my-pizza 20s infinite linear;
+}
+
+@keyframes rotate-my-pizza{
+    from{
+        rotate: 0deg;
+    }
+    to {
+        rotate: 180deg;
+    }
+}
+
+
+
+/* inputs */
+label.custom-labels{
+    color: #FFE6C7;
+    font-weight: 400;
+    font-family: 'Pacifico', cursive;
+    font-size: large;
+    margin-left: 15px;
+
+}
+
+label.custom-labels:hover{
+    font-size: x-large;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+input.custom-inputs{
+    height: 25px;
+    width: 25px;
+ 
+}
+
+
+
+/* form padding */
+form.base-form{
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+form.sauce-form{
+    padding-bottom: 20px;
+}
+
+/* button & price */
+button.custom-button{
+    font-family: 'Barriecito', cursive;
+    font-weight: 700;
+    font-size: x-large;
+    font-stretch: expanded;
+    background: none;
+    color: #E5890A;
+    border: #CC9B6D 0.2px solid;
+    height: 45px;
+    width: 180px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+button.custom-button:hover{
+    background-color: #E5890A;
+    color: #FFE6C7;
+    margin-top: -5px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+h1.custom-price{
+    font-family: 'K2D', sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+    color: #379237;
+    margin: 10px 10px;
+}

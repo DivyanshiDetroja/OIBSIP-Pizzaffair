@@ -1,3 +1,4 @@
+import { CardOrderItem} from './CardOrderItem';
 import React from 'react'
 import "./sidebar.css"
 
@@ -9,31 +10,21 @@ const Sidebar = () => {
             <div className="options">
                 <a className="a-menu sidebar-dark" href="https://www.google.com">Menu</a>
                 <a className="a-menu sidebar-dark" href="#">Customized Pizza</a>
-                <a className="a-menu sidebar-dark" href="#">Cart</a>
                 <a className="a-menu sidebar-dark" href="#">Order Status</a>
+                <a className="a-menu sidebar-dark" href="#">Logout</a>
             </div>
         </div>
         <div className="order">
           <div className="order-item-container">
-          <div className="order-item">
-            <h3 className="order-pizza-name">Pizza Name Sample Ssmple Sample</h3>
-            <h3 className="order-pizza-price"> ₹369</h3>
-            <div className="button-group">
-            <button className="order-pizza-button left-border-radius-button">+</button>
-            <button className="order-pizza-button zero">0</button>
-            <button className="order-pizza-button right-border-radius-button">-</button>
-            </div>
-          </div>
-          <div className="order-item"></div>
-          <div className="order-item"></div>
-          <div className="order-item"></div>
-          <div className="order-item"></div>
-          <div className="order-item"></div>
-          <div className="order-item"></div>
-          <div className="order-item"></div>
-          <div className="order-item"></div>
-          <div className="order-item"></div>
-          <div className="order-item"></div>
+            <CardOrderItem    />
+            <CardOrderItem    />
+            <CardOrderItem    />
+            <CardOrderItem    />
+            <CardOrderItem    />
+            <CardOrderItem    />
+            <CardOrderItem    />
+            <CardOrderItem    />
+          
           </div>
           <div className="order-total">
             <button className='checkout-button'>Proceed to Checkout</button>

@@ -75,6 +75,7 @@ button.card-customize-button:hover{
     transition: 0.3s;
     height: 33px;
     width: 115px;
+    cursor: pointer;
 }
 
 div.card-group{

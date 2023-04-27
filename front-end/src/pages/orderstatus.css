@@ -1,0 +1,48 @@
+ div.main-home{
+    overflow:visible;
+} 
+
+div.main-order{
+    display: flex;
+    flex-direction: column;
+    overflow: hideen;
+   
+}
+
+div.order-status-container-container{
+    height: 76.5vh;
+     width: 75vw; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 92%; */
+   
+}
+
+div.orders-to-scroll{
+    width: 100%;
+    overflow-y:scroll;
+    justify-content: space-around;
+    padding-left: 70px;
+    
+    /* width: 92%; */
+}
+
+div.orders-to-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  div.orders-to-scroll{
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+  
+
+
+h1.order-status-page-heading{
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    font-size: xx-large;
+    color: dimgrey;
+}

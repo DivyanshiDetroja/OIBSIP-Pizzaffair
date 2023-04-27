@@ -16,11 +16,11 @@ const Login = () => {
                 
                 
 
-                <input type="email" name="email" id="" placeholder="Email" autocomplete="off" className="email"/>
-                <input type="text" name="address" id="" placeholder="Address" autocomplete="off" />
-                <input type="password" name="password" id="" placeholder="Password" autocomplete="off" />
+                <input className='input-login' type="email" name="email" id="" placeholder="Email" autocomplete="off" />
+                <input className='input-login' type="text" name="address" id="" placeholder="Address" autocomplete="off" />
+                <input className='input-login' type="password" name="password" id="" placeholder="Password" autocomplete="off" />
             
-                <button type="submit">Register</button>
+                <button type="submit" className='login-button'>Register</button>
             </form>
         </div>
         </div>

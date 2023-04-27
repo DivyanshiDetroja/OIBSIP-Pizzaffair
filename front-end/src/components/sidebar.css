@@ -134,7 +134,7 @@ div.order-total{
   height: 10vh;
   width: 25vw;
   background-color: rgba(0, 0, 0, 0.5);
-  position:sticky;
+  position:fixed;
   bottom:0;
   
   display: flex;
@@ -175,6 +175,7 @@ display: flex;
 
 button.order-pizza-button:hover{
   background-color: #379237;
+  cursor: pointer;
   
 }
 
@@ -225,6 +226,7 @@ button.order-pizza-button:hover{
     color: #FFE6C7;
     margin-top: -5px;
     transition: 0.3s;
+    cursor: pointer;
   }
 
   h2.checkout-total{

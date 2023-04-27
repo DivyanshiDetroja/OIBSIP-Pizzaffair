@@ -14,8 +14,8 @@ const Login = () => {
             <form action="/" method="post">
                 <h1>PizzAffair</h1>
                 
-                <input type="text" name="email" id="" placeholder="Email" autocomplete="off" autofill="off" className="input" />
-                <input type="password" name="password" id="" placeholder="Password" autocomplete="off" className="input" />
+                <input type="text" name="email" id="" placeholder="Email" autocomplete="off" autofill="off" className="input-login" />
+                <input type="password" name="password" id="" placeholder="Password" autocomplete="off" className="input-login" />
                 <a href="#">Forgot Password?</a>
             
                 <button type="submit" className="login-button">Log In</button>

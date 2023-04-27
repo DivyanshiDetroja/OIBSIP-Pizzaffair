@@ -1,0 +1,104 @@
+/* div.order-status-card-container{
+     height: DO NOT HARDCODEEEEE!!!!!!!!!!! 
+   
+    border-radius: 20px;
+} */
+
+div.order-status-card{
+    display: flex;
+    border-radius: 25px;
+    border: rgba(255, 230, 199, 0.7) solid 5px;
+    margin: 15px 0;
+    width: 92%;
+}
+
+div.left-animation{
+    background-image: url("../images/animation/online-food-delivery-process.gif") ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    min-height: 193px ;
+    /* height: 100%; */
+    width: 30%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
+
+div.right-order-info{
+    background-color: rgba(229, 137, 10, 0.6) ;
+    height: 100%;
+    width: 70%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px 45px;
+}
+
+div.order-status-card-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 55px;
+}
+
+div.order-sub-items-container{
+    display: flex;
+    flex-direction: column;
+}
+
+div.order-sub-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 35px;
+}
+
+div.order-status-card-total-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2.order-status-card-order-number{
+    font-family: 'Kalam', cursive;
+    font-weight: 600;
+    font-size: large;
+    color:#9D5C0D;
+}
+
+h2.order-status-card-order-status{
+    font-family: 'Barriecito', cursive;
+    font-weight: 800;
+    font-size: x-large;
+    color:#54B435;
+}
+
+h3.order-sub-item-pizza-name, h3.order-sub-item-pizza-quantity, h3.order-sub-item-pizza-cost{
+    font-family: 'K2D', sans-serif;
+    font-weight: 800;
+    font-size: larger;
+    color: #FFE6C7 ;
+}
+
+div.order-status-card-total-container{
+    max-height: 60px;
+}
+
+h3.order-time{
+    font-family: 'Kalam', cursive;
+    font-weight: 600;
+    font-size: small;
+    color: rgba(69, 69, 69, 0.7);
+}
+
+h2.order-status-card-total{
+    font-family: 'K2D', sans-serif;
+    font-weight: 600;
+}
+
+div.order-sub-items-details{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
