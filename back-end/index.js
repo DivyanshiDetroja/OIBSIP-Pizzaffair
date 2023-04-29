@@ -10,6 +10,11 @@ dotenv.config();
 const cors = require("cors");
 app.use(cors());
 
+
+const pizzaRoute = require("./routes/pizza");
+
+app.use("/pizza", pizzaRoute);
+
 //mongoose
 const mongoose = require("mongoose");
 mongoose.connect(process.env.MONGO_URL).then(()=> {
@@ -18,6 +23,7 @@ mongoose.connect(process.env.MONGO_URL).then(()=> {
 .catch((err)=>{
     console.log(err);
 });
+
 
 app.get('/', (req, res)=>{
     res.send("working");
