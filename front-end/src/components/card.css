@@ -14,6 +14,7 @@ div.left{
     background-image: url("../images/pizza-images/img1.jpg");
     background-repeat: no-repeat;
     background-size: cover ;
+    background-position: center;
 }
 
 div.right{
@@ -27,7 +28,7 @@ div.right{
 h1.pizza-name{
     color: #9D5C0D;
     font-family: 'Barriecito', cursive;
-    font-size: xxx-large;
+    font-size: xx-large;
     font-weight: 800;
     opacity: 1;
 }
@@ -35,7 +36,7 @@ h1.pizza-name{
 p.p-card{
     font-family: 'Caveat', cursive;
     font-weight: 800;
-    font-size: larger;
+    font-size: large;
     color: #E5890A;
     opacity: 1;
     margin: 5px 0;

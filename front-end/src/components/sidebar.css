@@ -32,6 +32,7 @@ background-size: calc(4*40px) calc(1.5*40px + 15px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     height: 40vh;
     width: 25vw;
     /* background-color: blue; */
@@ -69,6 +70,12 @@ div.order::-webkit-scrollbar {
   div.sidebar-container{
     box-shadow: 2px 0 2px rgba(104, 103, 103, 0.6); 
     opacity: 0.8;
+}
+
+div.order-item{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
   /* menu */
@@ -122,9 +129,10 @@ div.order-item-container{
   justify-content: center;
 }
 
+
 div.order-item{
   height: 9vh;
-  width: 22vw;
+  width: 23vw;
   background-color: rgba(250, 250, 250, 0.7);
   border-radius: 20px;
   margin: 10px 0;
@@ -143,56 +151,6 @@ div.order-total{
 
 }
 
-div.order-item{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-div.button-group{
-  display: flex;
-  height: 30px;
-  width: 90px;
-  margin: 10px;
-}
-
-button.order-pizza-button{
-  background-color: #54B435;
-  color:white;
-  height: 30px;
-  width: 30px;
-  border: 1px solid #379237;
-  margin: 0;
-  font-family: 'Barriecito', cursive;
-    font-weight: 600;
-font-size: large;
-    
-display: flex;
-    align-items: center;
-    justify-content: center;
-  
-}
-
-button.order-pizza-button:hover{
-  background-color: #379237;
-  cursor: pointer;
-  
-}
-
-  /* button.zero{
-    pointer-events: none;
-   cursor: default;
-  } */
-
-.left-border-radius-button{
-  border-top-left-radius: 12px;
-  border-bottom-left-radius: 12px;
-  }
-
-.right-border-radius-button{
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
-  }
 
   h3.order-pizza-price{
     font-family: 'K2D', sans-serif;
@@ -203,9 +161,11 @@ button.order-pizza-button:hover{
 
   h3.order-pizza-name{
     font-family: 'Kalam', cursive;
-  font-weight: 600;
+  font-weight: 900;
   color: #9D5C0D;
-  margin: 10px;
+  font-size: large;
+  margin: 0 2px;
+  padding: 1px 1px;
   }
 
   button.checkout-button{
@@ -235,4 +195,78 @@ button.order-pizza-button:hover{
     font-size: x-large;
     color: #E5890A;
     margin: 10px 10px;
+    margin-right: 5px;
+  }
+
+  /* remove item cart */
+
+div.button-group-order{
+  width:60px;
+  display: flex;
+  margin-right: 10px;
+}
+
+  button.order-remove-pizza, button.order-qty-pizza{
+    /* border-radius: 8px; */
+    background-color: rgba(69, 69, 69, 0.5);
+    color:white;
+    height: 30px;
+    width: 30px;
+    border: 0.5px solid grey;
+    margin: 0;
+    font-family: 'Barriecito', cursive;
+      font-weight: 600;
+  font-size: large;
+  
+  }
+
+  button.order-remove-pizza:hover{
+    background-color: #E74646;
+    cursor: pointer;
+    
+  }
+
+  button.order-qty-pizza{
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+
+  button.order-remove-pizza{
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 0.5px 2px;
+  }
+
+  /* cart heading */
+  div.cart-heading-div{
+    margin: 0;
+    background-color: rgba(229, 137, 10, 0.5);
+    color: white;
+    font-family: 'Barriecito', cursive;
+    font-weight: 800;
+    font-stretch: ultra-expanded;
+    font-size: larger;
+    height: 45px;
+    display: flex;
+    width:25vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h4.order-pizza-description{
+    font-family: 'Kalam', cursive;
+  font-weight: 500;
+  color:#E5890A;
+  font-size: small;
+  margin: 0 4px;
+  line-height: 1.2;
+  }
+
+  div.order-pizza-deets-wrap{
+    display: flex;
+    flex-direction: column;
+    height: 8vh;
+    width: 20vw;
+    padding: 5px 2px;
+    
   }

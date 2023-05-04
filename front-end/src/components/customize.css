@@ -51,7 +51,7 @@ div.details-custom{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: 80%;
     margin: 20px 0;
 }
 
@@ -126,19 +126,60 @@ label.custom-labels{
 
 }
 
-label.custom-labels:hover{
-    font-size: x-large;
-    cursor: pointer;
-    transition: 0.15s;
-}
-
 input.custom-inputs{
     height: 25px;
     width: 25px;
  
 }
 
+/* buttons + - 0 */
 
+  
+  div.button-group{
+    display: flex;
+    height: 40px;
+    width: 120px;
+    margin: 10px;
+  }
+  
+  button.order-pizza-button{
+    background-color: #54B435;
+    color:white;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #379237;
+    margin: 0;
+    font-family: 'Barriecito', cursive;
+      font-weight: 600;
+  font-size: large;
+      
+  display: flex;
+      align-items: center;
+      justify-content: center;
+    
+  }
+  
+  button.order-pizza-button:hover{
+    background-color: #379237;
+    cursor: pointer;
+    
+  }
+  
+    /* button.zero{
+      pointer-events: none;
+     cursor: default;
+    } */
+  
+  .left-border-radius-button{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    }
+  
+  .right-border-radius-button{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    }
+  
 
 /* form padding */
 form.base-form{

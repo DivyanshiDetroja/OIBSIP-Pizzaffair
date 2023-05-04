@@ -12,8 +12,12 @@ app.use(cors());
 
 
 const pizzaRoute = require("./routes/pizza");
+const userRoute = require("./routes/user");
+const orderRoute = require("./routes/order");
 
 app.use("/pizza", pizzaRoute);
+app.use("/user", userRoute);
+app.use("/order", orderRoute);
 
 //mongoose
 const mongoose = require("mongoose");

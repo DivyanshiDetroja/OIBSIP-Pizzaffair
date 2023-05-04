@@ -1,15 +1,31 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { removePizza } from "../redux/cartRedux";
 
 
-export function CardOrderItem() {
+export function CardOrderItem(props) {
+
+  const pizza = props.pizza;
+  const index = props.index;
+
+  const dispatch = useDispatch();
+
+  const terminatePizza = ()=> {
+    dispatch(removePizza([index, pizza]));
+  }
+
   return <div className="order-item">
-            <h3 className="order-pizza-name">Pizza Name Sample Ssmple Sample</h3>
-            <h3 className="order-pizza-price"> ₹369</h3>
-            <div className="button-group">
-            <button className="order-pizza-button left-border-radius-button">+</button>
-            <button className="order-pizza-button zero">0</button>
-            <button className="order-pizza-button right-border-radius-button">-</button>
+            <div className="order-pizza-deets-wrap">
+            <h3 className="order-pizza-name">{pizza.pizzaName}</h3>
+            <h4 className="order-pizza-description">{pizza.customItems.base} , {pizza.customItems.sauce}, {pizza.customItems.cheese}, {pizza.customItems.veggies}</h4>
             </div>
+            <h3 className="order-pizza-price"> ₹{pizza.price}</h3>
+            <div className="button-group-order">
+            <button className="order-qty-pizza">{pizza.quantity}</button>
+            <button className="order-remove-pizza" onClick={terminatePizza}>⛔</button>
+            </div>
+            
+            
           </div>;
 }
   
