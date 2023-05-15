@@ -1,0 +1,154 @@
+
+
+div.admin-parent-container{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    display:flex;
+}
+
+div.sidebar-admin{
+    width: 20vw;
+    height: 100vh;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background: 
+      radial-gradient(calc(1.28*40px + 15px/2) at left 50% bottom calc(-.8*40px),#fafafa calc(100% - 15px),#ffe6c7 calc(101% - 15px) 100%,#0000 101%) calc(2*40px) calc(-1*calc(1.5*40px + 15px)),
+      radial-gradient(calc(1.28*40px + 15px/2) at left 50% bottom calc(-.8*40px),#c7c7c7 calc(100% - 15px),#ffe6c7 calc(101% - 15px) 100%,#0000 101%) calc(-1*40px) calc(calc(1.5*40px + 15px)/-2),
+      radial-gradient(calc(1.28*40px + 15px/2) at left 50% top    calc(-.8*40px),#c7c7c7 calc(100% - 15px),#ffe6c7 calc(101% - 15px) 100%,#0000 101%) 0 calc(1.5*40px + 15px),
+      radial-gradient(calc(1.28*40px + 15px/2) at left 50% top    calc(-.8*40px),#fafafa calc(100% - 15px),#ffe6c7 calc(101% - 15px) 100%,#0000 101%) 40px calc(calc(1.5*40px + 15px)/ 2),
+      linear-gradient(#fafafa 50%,#c7c7c7 0);
+background-size: calc(4*40px) calc(1.5*40px + 15px);
+}
+
+div.sidebar-admin-img{
+    background-image: url("../images/pizza-man.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 70vh;
+    width: 20vw;
+}
+
+a.sidebar-admin-menu{
+    font-family: 'Barriecito', cursive;
+    font-weight: 800;
+    font-size: 3rem;
+    font-stretch: extra-expanded;
+    margin: 55px 0;
+    text-decoration: none;
+    color: #9D5C0D;
+}
+
+a.sidebar-admin-menu:hover{
+   font-size: 4rem;
+    color:#E5890A;
+    transition: 0.4s;
+}
+
+div.admin-main-container{
+    background-color: rgb(69,69,69,0.3);
+    height:100vh;
+    width: 80vw;
+}
+
+div.admin-orders-list{
+    height: 65vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.admin-orders-card{
+    height: 52vh;
+    width: 75vw;
+    background-color: #FFA559;
+    border-radius: 25px;
+    padding: 10px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow-y: scroll;
+}
+
+div.admin-orders-card::-webkit-scrollbar {
+    display: none;
+  }
+
+  div.admin-orders-card{
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+    }
+
+h1.admin-orders-heading{
+    margin: 0 10%;
+    /* margin-top: -45px; */
+    position: absolute;
+    top: 3px;
+    font-family: 'Kalam', cursive;
+    font-weight: 900;
+    color: #454545;
+}
+
+
+
+
+
+
+
+div.admin-inventory-container{
+    height: 35vh;
+    width: 80vw;
+
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.inventory-base-container, div.inventory-sauce-container, div.inventory-cheese-container, div.inventory-veggies-container{
+    height: 28vh;
+    width: 16vw;
+    background-color: #FFA559;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+
+}
+
+
+h1.inventory-base-heading, h1.inventory-sauce-heading, h1.inventory-cheese-heading, h1.inventory-veggies-heading{
+    font-family: 'Kalam', cursive;
+    font-weight: 900;
+    margin: -45px 0 0 0;
+    color: #454545;
+}
+
+div.inventory-items-container{
+    width: 85%;
+}
+
+h3.inventory-base-item{
+    margin: 7px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFE6C7;
+    font-family: 'Caveat', cursive;
+    font-weight: 800;
+    font-size: large;
+
+}

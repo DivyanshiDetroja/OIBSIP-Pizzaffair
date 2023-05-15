@@ -106,13 +106,14 @@ a.a-menu{  margin: 7px 0;
 a.a-menu:hover, a.a-menu:active{
     font-size: xxx-large;
     color: #E5890A;
+    transition: 0.4s;
 }
 
 a.a-menu:active{
   text-decoration: underline;
 }
 
-h1{
+h1.sidebar-dark{
     margin: 0;
     /* margin-left: 75px; */
     font-size: 3.5rem;
@@ -142,8 +143,9 @@ div.order-total{
   height: 10vh;
   width: 25vw;
   background-color: rgba(0, 0, 0, 0.5);
-  position:fixed;
+  position:sticky;
   bottom:0;
+  top: 50vh;
   
   display: flex;
   justify-content: space-around;

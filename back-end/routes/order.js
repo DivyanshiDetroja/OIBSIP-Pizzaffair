@@ -1,6 +1,12 @@
 const router = require("express").Router();
 const Order = require("../models/Order");
 const Item = require("../models/customItems");
+const Razorpay = require('razorpay');
+
+var instance = new Razorpay({
+    key_id: process.env.RAZORPAY_KEY_ID,
+    key_secret: process.env.RAZORPAY_SECRET,
+  });
 
 //order add
 const fname = (inventoryItems, customItems)=>{
@@ -12,23 +18,50 @@ const fname = (inventoryItems, customItems)=>{
     return inventoryItems;
 }
 
-router.post("/add", async (req, res)=>{
-    const newOrder = new Order(req.body);
-    try { 
-        var orderItems = newOrder.orderItems;
-        var inventoryItems = await Item.findOne();
+// router.post("/add", async (req, res)=>{
+//     const newOrder = new Order(req.body);
+//     try { 
+//         var orderItems = newOrder.orderItems;
+//         var inventoryItems = await Item.findOne();
 
-        orderItems.map((hemlo)=>{
-            console.log(hemlo.customItems);
-            inventoryItems = fname(inventoryItems, hemlo.customItems);
-        });
-        // const savedOrder = await newOrder.save();
-         res.status(201).json(inventoryItems);
-    } catch (err) {
-        console.log(err);
-    };
-    //payment to be added
-});
+//         orderItems.map((hemlo)=>{
+//             console.log(hemlo.customItems);
+//             inventoryItems = fname(inventoryItems, hemlo.customItems);
+//         });
+//         // const savedOrder = await newOrder.save();
+//          res.status(201).json(inventoryItems);
+//     } catch (err) {
+//         console.log(err);
+//     };
+//     //payment to be added
+// });
+
+router.post("/addOrder", async (req, res) => {
+    const currentDate = new Date();
+    instance.orders
+    
+    .create({
+      amount: req.body.totalPrice * 100,
+      currency: "INR",
+      receipt:
+        currentDate.getDate() +
+        "/" +
+        (currentDate.getMonth() + 1) +
+        "/" +
+        currentDate.getFullYear() +
+        " @ " +
+        currentDate.getHours() +
+        ":" +
+        currentDate.getMinutes() +
+        ":" +
+        currentDate.getSeconds(),
+    })
+    .then((order) => res.json(order))
+    .catch((err) => res.send(err));
+  });
+
+
+
 
 //get all orders
 router.get("/:id", async (req, res)=>{

@@ -64,6 +64,15 @@ h2.custom-base-heading, h2.custom-sauce-heading, h2.custom-cheese-heading,h2.cus
     opacity: 0.7;
 }
 
+h2.custom-cheese-heading{
+    margin: 0 ;
+    margin-top: 12px;
+}
+
+h2.custom-veggies-heading{
+    margin: 5px 0;
+}
+
 h2.heading-left-custom{
     text-align: center;
     font-family: 'Kalam', cursive;

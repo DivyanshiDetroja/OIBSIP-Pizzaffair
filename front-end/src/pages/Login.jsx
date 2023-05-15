@@ -64,7 +64,7 @@ const Login = () => {
               Log In
             </button>
             <Toaster />
-            <a href="#">Not a member? Create an account</a>
+            <a href="#" className="a-login">Not a member? Create an account</a>
           </div>
         </div>
       </div>
