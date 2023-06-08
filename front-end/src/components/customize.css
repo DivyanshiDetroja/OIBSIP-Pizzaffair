@@ -1,11 +1,4 @@
-/* div.pizza-custom-container{
-    height: 76.5vh;
-    width: 75vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-} */
 
 div.custom-card{
     display: flex;
@@ -55,7 +48,6 @@ div.details-custom{
     margin: 20px 0;
 }
 
-/* heading font style */
 h2.custom-base-heading, h2.custom-sauce-heading, h2.custom-cheese-heading,h2.custom-veggies-heading{
     font-family: 'Barriecito', cursive;
     font-weight: 800;
@@ -108,7 +100,7 @@ h2.heading-right-custom{
     margin: 5px 0;
 }
 
-/* img */
+
 img.pizza-round-round{
     rotate: 90deg;
     animation: rotate-my-pizza 20s infinite linear;
@@ -125,7 +117,6 @@ img.pizza-round-round{
 
 
 
-/* inputs */
 label.custom-labels{
     color: #FFE6C7;
     font-weight: 400;
@@ -140,9 +131,6 @@ input.custom-inputs{
     width: 25px;
  
 }
-
-/* buttons + - 0 */
-
   
   div.button-group{
     display: flex;
@@ -174,11 +162,6 @@ input.custom-inputs{
     
   }
   
-    /* button.zero{
-      pointer-events: none;
-     cursor: default;
-    } */
-  
   .left-border-radius-button{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -189,8 +172,6 @@ input.custom-inputs{
     border-bottom-right-radius: 20px;
     }
   
-
-/* form padding */
 form.base-form{
     padding-bottom: 20px;
     padding-top: 10px;
@@ -200,7 +181,7 @@ form.sauce-form{
     padding-bottom: 20px;
 }
 
-/* button & price */
+
 button.custom-button{
     font-family: 'Barriecito', cursive;
     font-weight: 700;

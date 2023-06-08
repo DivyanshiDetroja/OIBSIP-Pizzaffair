@@ -1,18 +1,11 @@
-/* utls css */
+
 div.sidebar-container{
     height: 100vh;
     width: 25vw;
-    /* background-color: yellow; */
     display: flex;
     flex-direction: column;
 
-    /* background-color: #FAFAFA; */
-  /* opacity: 0.7; */
-  /* background-color: #FAFAFA; */
-/* opacity: 0.4; */
-/* background-color: #FAFAFA; */
 opacity: 1;
-/* background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #FAFAFA 40px ), repeating-linear-gradient( #F7D08A55, #F7D08A ); */
   
 background: 
       radial-gradient(calc(1.28*40px + 15px/2) at left 50% bottom calc(-.8*40px),#fafafa calc(100% - 15px),#ffe6c7 calc(101% - 15px) 100%,#0000 101%) calc(2*40px) calc(-1*calc(1.5*40px + 15px)),
@@ -35,9 +28,6 @@ background-size: calc(4*40px) calc(1.5*40px + 15px);
     justify-content: space-between;
     height: 40vh;
     width: 25vw;
-    /* background-color: blue; */
-    /* background-color: #FAFAFA; */
-    /* opacity: 0.85; */
     background: none;
 
   }
@@ -62,11 +52,10 @@ div.order::-webkit-scrollbar {
   }
 
   div.order{
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
+      -ms-overflow-style: none;  
+      scrollbar-width: none;  
     }
   
-  /* styles css */
   div.sidebar-container{
     box-shadow: 2px 0 2px rgba(104, 103, 103, 0.6); 
     opacity: 0.8;
@@ -78,10 +67,6 @@ div.order-item{
   align-items: center;
 }
 
-  /* menu */
-div.menu{
-    /* background-color: #FAFAFA; */
-}
 
 div.options{
     display: flex;
@@ -115,7 +100,6 @@ a.a-menu:active{
 
 h1.sidebar-dark{
     margin: 0;
-    /* margin-left: 75px; */
     font-size: 3.5rem;
     font-weight: 400;
     font-family: 'Pacifico', cursive;
@@ -200,7 +184,6 @@ div.order-total{
     margin-right: 5px;
   }
 
-  /* remove item cart */
 
 div.button-group-order{
   width:60px;
@@ -209,7 +192,6 @@ div.button-group-order{
 }
 
   button.order-remove-pizza, button.order-qty-pizza{
-    /* border-radius: 8px; */
     background-color: rgba(69, 69, 69, 0.5);
     color:white;
     height: 30px;
@@ -239,7 +221,6 @@ div.button-group-order{
     padding: 0.5px 2px;
   }
 
-  /* cart heading */
   div.cart-heading-div{
     margin: 0;
     background-color: rgba(229, 137, 10, 0.5);

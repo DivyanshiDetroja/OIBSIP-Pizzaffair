@@ -1,8 +1,4 @@
-/* div.order-status-card-container{
-     height: DO NOT HARDCODEEEEE!!!!!!!!!!! 
-   
-    border-radius: 20px;
-} */
+
 
 div.order-status-card{
     display: flex;
@@ -18,7 +14,6 @@ div.left-animation{
     background-size: contain;
     background-position: center;
     min-height: 193px ;
-    /* height: 100%; */
     width: 30%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;

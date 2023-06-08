@@ -1,8 +1,4 @@
-/* .main-section{
-    background-color: white;
-} */
 
-/* utils css */
 div.main-section{
     display: flex;
     flex-direction: column;
@@ -17,18 +13,13 @@ div.head-section{
     height: 20vh;
     width: 75vw;
     margin-top: 0;
-    /* background-color: green; */
   }
   
   div.quote{
     height: 3.5vh;
     width: 75vw;
-    /* background-color: yellow; */
   }
 
-  /* styles css */
-
-  /* header img */
 div.header{
     background-image: url("../images/italian-chefs.jpg");
     background-repeat: no-repeat;
@@ -51,14 +42,11 @@ div.quote{
 
 }
 
-/* pizza quote animation */
 p.animation{
     margin: 0.5px;
-    /* text-align: right; */
 
    animation-name: text-animation;
    animation-duration: 25s;
-   /* animation-delay: 2s; */
    animation-iteration-count: infinite;
    animation-timing-function: linear;
 }

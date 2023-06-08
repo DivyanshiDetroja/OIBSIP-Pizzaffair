@@ -87,13 +87,12 @@ div.admin-orders-card::-webkit-scrollbar {
   }
 
   div.admin-orders-card{
-      -ms-overflow-style: none;  /* IE and Edge */
-      scrollbar-width: none;  /* Firefox */
+      -ms-overflow-style: none; 
+      scrollbar-width: none; 
     }
 
 h1.admin-orders-heading{
     margin: 0 10%;
-    /* margin-top: -45px; */
     position: absolute;
     top: 3px;
     font-family: 'Kalam', cursive;
