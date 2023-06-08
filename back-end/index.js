@@ -35,6 +35,6 @@ app.get('/', (req, res)=>{
     res.send("working");
 })
 
-app.listen(5000, ()=>{
+app.listen(process.env.PORT || 5000, ()=>{
     console.log("server up and running at port 5000!");
 });
