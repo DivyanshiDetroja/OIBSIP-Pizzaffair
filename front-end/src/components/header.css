@@ -1,12 +1,12 @@
 /* .main-section{
     background-color: white;
-} 
+} */
 
 /* utils css */
 div.main-section{
     display: flex;
     flex-direction: column;
-  } */
+  } 
 
 div.head-section{
   display: flex;
